@@ -7,10 +7,13 @@ div.titoletto {
     margin-left: 80px;
 }
 .rett-top {
-    width:100%;
-    height:100px;
+    font-size: 15px;
+    height: 100px;
     background: #005b7fb8;
-    position: relative;
+    width: -webkit-fill-available;
+    text-align: -webkit-center;
+    color: white;
+    /* position: relative; */
     .icona-top {
         position: absolute;
         margin-left: 108px;
@@ -86,9 +89,11 @@ div.titoletto {
 .rett-bottom {
     margin-top: 80px;
     background: #FF9556;
-    position: relative;
+    text-align: -webkit-center;
+    font-size: 15px;
+    width: -webkit-fill-available;
+    /* position: relative; */
     bottom: 0;
-    width: 100%;
     .firma {
         font-weight: bold;
         color: white;
@@ -138,8 +143,13 @@ div.titoletto {
         color: white;
         /* margin-left: 50px; */
         margin-top: 80px;
-        display: flex;
-        font-size: larger;
+        /* display: flex; */
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: baseline;
+        font-size: 20px;
         .open-modal {
             color: #005B7F;
             border: none;
@@ -159,18 +169,20 @@ div.titoletto {
             font-size: 13px;
         }
         .modal-content {
-            text-align: -webkit-cente  r;
+            text-align: -webkit-center;
         }
         .modal {
             display: none;
+            margin-left: 8%;
+            margin-right: 8%;
+            margin-top: 25%;
             text-align: center;
             border-radius: 10px;
+            font-size: 20px;
             background-color: #005b7fe2;
             position: absolute;
             width: -webkit-fill-available;
-            margin: 0 8%;
             height: 210px;
-            /* width: 1110px; */
             box-shadow: 2px 2px 35px grey;
         }
         .attivita {
@@ -185,17 +197,18 @@ div.titoletto {
         .blocchi {
             border-radius: 10px;
             text-align: center;
-            width: 13%;
+            width: -webkit-fill-available;;
             resize: none;
             padding: 10px;
             margin: 10px;
             border: none;
             float: left;
+            font-size: 20px;
         }
     }
     .chi-sono {
         background-color: #ff78285e;
-        margin-top: 80px;
+        margin-top: 800px;
         margin-left: 40px;
         margin-right: 40px;
         border-radius: 12px;
