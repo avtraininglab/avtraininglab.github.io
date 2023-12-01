@@ -1,0 +1,205 @@
+<html>
+    <!-- INTESTAZIONE -->
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="icon" type="image/x-icon" href="icona.ico">
+
+        <!-- STILE RESPONSIVE -->
+        <script type="text/javascript" src="assets/js/respond.min.js"></script>
+        <script type="text/javascript" src="assets/js/modernizr-2.0.6.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <!--[if (gte IE 6)&(lte IE 8)]>
+        <script type="text/javascript" src="assets/js/selectivizr-min.js"></script>
+        <![endif]-->
+        <!-- Flexlider -->
+        <script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+
+        <script src="script.js"></script> 
+
+        <title>Chinesiologo Alessandro Venezia</title>
+    </head>
+
+    <!-- BODY -->
+    <body>
+        <!-- TOP BAR -->
+        <center bgcolor="white">
+            <div class="rett-top">
+                <!-- ICONA LOGO -->
+                <div class="icona-top">
+                    <img src="icona.ico" style="width: 25px; height: 27px;"/>
+                </div>
+
+                <h1> <!-- titolo -->
+                    <font class="titolo">AV Training LAB <br>
+                        <font class="io">Alessandro Venezia chinesiologo</font>
+                    </font>
+                </h1>
+
+                <!-- COLLEGAMENTI -->
+                <h3 id="collegamenti" class="collegamenti">
+                    <a id="c-home" class="c-home links" name="c-home" href="#home" onclick="setBackgroundColor(this)">
+                        <font>Home</font>
+                    </a>
+                    <a id="c-servizi" class="c-servizi links" name="c-servizi" href="#servizi" onclick="setBackgroundColor(this)">
+                        <font>Servizi</font>
+                    </a>
+                    <a id="c-chi-sono" class="c-chi-sono links" name="c-chi-sono" href="#chi-sono" onclick="setBackgroundColor(this)">
+                        <font>Chi sono</font>
+                    </a>
+                    <a id="c-contatti" class="c-contatti links" name="c-contatti" href="#contatti" onclick="setBackgroundColor(this)">
+                        <font>Contatti</font>
+                    </a>
+                </h3>
+            </div>
+        </center>
+
+        <!-- CONTROL SCROLL -->
+        <div id="backHome" class="backHome hide">
+            <a href="#collegamenti" style="text-decoration: none; color: black;" onclick="setBackgroundColor(null, 'c-home')">&nu;</a>    
+        </div>
+
+        <!-- CONTENUTO DELLA PAGINA -->
+        <div class="content">
+
+            <!-- HOME -->
+            <div id="home" class="home">
+                <div class="introduzione">
+                    <div class="frase-introduttiva">
+                    Migliora il tuo stato <span style="color:#FF9556;"><b>motorio</b></span> e
+                    <span style="color:#FF9556;"><b>psicofisico</b></span> adattando l'attività fisica al tuo stile di vita.
+                    </div>
+                    <div class="img-introduttiva">
+                        <img src="icona-palestra.png">
+                    </div>
+                </div>
+                <div class="chi-e-chinesiologo">
+                    <b>Chi è</b> il chinesiologo? <b>Cosa fa</b> il chinesiologo? <b>Quando e perchè andare</b> dal chinesiologo? <br><br>
+                    <a href="#chinesiologo" style="color:#FF9556; font-size: 15px;">Scopri di più</a>
+                </div>
+            </div>
+
+            <!-- SERVIZI -->
+            <div class="titoletto">
+                <h1>Offro i seguenti servizi:</h1>
+            </div>
+            <div id="servizi" class="servizi">
+                <div class="blocchi" style="background-color: #FF9556;">
+                    <b>Ginnastica antalgica</b> <br>
+                    <button id="open-modal" class="open-modal" name="ginnasticaAntalgica" onclick="javascript:mostra(this)">Scopri di più</button>
+                </div>
+                <div class="blocchi" style="background-color: #FF9556;"><b>
+                    Ginnastica posturale</b> <br>
+                    <button id="open-modal" class="open-modal" name="ginnasticaPosturale" onclick="javascript:mostra(this)">Scopri di più</button>
+                </div>
+                <div class="blocchi" style="background-color: #FF9556;">
+                    <b>Ginnastica respiratoria</b> <br>
+                    <button id="open-modal" class="open-modal" name="ginnasticaRespiratoria" onclick="javascript:mostra(this)">Scopri di più</button>
+                </div>
+                <div class="blocchi" style="background-color: #FF9556;">
+                    <b>Ginnastica funzionale</b> <br>
+                    <button id="open-modal" class="open-modal" name="ginnasticaFunzionale" onclick="javascript:mostra(this)">Scopri di più</button>
+                </div>
+                <div class="blocchi" style="background-color: #ff7828;">
+                    <b>Riatletizzazione</b> <br>
+                    <button id="open-modal" class="open-modal" name="riatletizzazione" onclick="javascript:mostra(this)">Scopri di più</button>
+                </div>
+                <div class="blocchi" style="background-color: #f95c00;">
+                    <b>Personal training</b> <br>
+                    <button id="open-modal" class="open-modal" name="personalTraining" onclick="javascript:mostra(this)">Scopri di più</button>
+                </div>
+                <div class="blocchi" style="background-color: #f90000;">
+                    <b>Allenamento fisico per persone con disabilità</b> <br>
+                    <button id="open-modal" class="open-modal" name="disabilita" onclick="javascript:mostra(this)">Scopri di più</button>
+                </div>
+                <div id="modal" class="hidden modal">
+                    <button id="close-modal" class="close-modal" onclick="javascript:nascondi()"><strong>&#10006</strong></button>
+                    <div class="modal-content">
+                        <div id="attivita" class="attivita"> <!-- TITOLO --></div>
+                        <div id="descrizione" class="descrizione"> <!-- DESCRIZIONE --></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHI SONO -->
+            <div id="chi-sono" class="chi-sono">
+                <h1 style="color: white;">Chi sono?</h1>
+                <div class="testo">
+                    Il dott. Alessandro Venezia è laureato in <b>Scienze delle Attività Motorie e Sportive</b> all'Università Aldo Moro degli Studi di Bari. <br>
+                    Ho conseguito la laurea magistrale in <b>Scienze Motorie Preventive Adattate</b> presso l'Università degli Studi di Milano. <br>
+                    Durante il mio percorso di studi ho svolto un tirocinio presso una clinica di prevenzione e riabilitazione motoria 
+                    svolgendo corsi di <b>ginnastica antalgica</b>, <b>posturale</b> e di <b>riatletizzazione individuale e personalizzata</b>.
+
+                    <!-- TODO: AGGIUNGERE DI COSA SI E' OCCUPATO E DI COSA SI OCCUPA -->
+                </div>
+            </div>
+
+            <!-- APPENDICE -->
+            <div id="appendice" class="appendice">
+                <div id="chinesiologo" class="chinesiologo">
+                    <h1 style="color: #FF9556;">Il chinesiologo</h1>
+                    <div>
+                        La chinesiologia è la scienza che studia il movimento del corpo umano in tutte le sue forme. <br>
+                        Il chinesiologo è la figura professionale laureata in Scienze motorie preventive ed adattate, si occupa del movimento umano sotto 
+                        tutti i punti di vista (sportivo, rieducativo, preventivo, amatoriale e ludico) per migliorare il benessere psicofisico della persona.
+                        Il chinesiologo lavora in vari settori:
+                        <ul>
+                            <li>Allenamento sportivo specifico</li>
+                            <li>Ginnastica rieducativa per il corretto movimento del corpo e per la corretta postura</li>
+                            <li>Attività motoria per la prevenzione di disturbi posturali e/o ossei e muscolari</li>
+                            <li>Attività fisica post intervento chirurgico a fini riabilitativi</li>
+                        </ul>
+
+                        <h3>Quando e perchè andare dal chinesiologo?</h3>
+
+                        <div>
+                            Dal chinesiologo si può andare per tutti i motivi sopra elencati, ma è bene fare attività fisica guidata e controllata per mantenere 
+                            il corretto equilibrio psico-fisico e per far svolgere al corpo i corretti movimenti. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TODO: SEPARARE CON UN'IMMAGINE I DUE PARAGRAFI -->
+
+            <!-- CONTATTI -->
+            <div id="contatti" class="contatti">
+                <b style="font-size: xx-large;">Per fissare un appuntamento contattami</b> 
+                <div class="contatti-text">    
+                    <b>Alessandro Venezia</b> chinesiologo <br>
+
+                    Tel: 3483728061 <br>
+                    Email: <u>avtraininglab@gmail.com</u> <br>
+
+                    <!-- Se vuoi maggiori informazioni chiama o manda un'email. <br>
+                    In alternativa compila il form <a href="form.html" style="color:#FF9556;">qui</a>. -->
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <center bgcolor="white">
+            <div class="rett-bottom">
+                <div>
+                    <font class="testo-bottom">
+                        <div>Fissiamo un appuntamento</div>
+                        <div>Tel: 3483728061</div>
+                        <div>Email: <u>avtraininglab@gmail.com</u></div>
+                        <div>I miei social:</div>
+                        <div>
+                            <a href="https://www.instagram.com/veniceinmovement/" target="_blank" style="text-decoration: none;">
+                                <img src="instagram.svg" width="23px" height="23px">
+                            </a>
+                            <a href="https://www.linkedin.com/in/alessandro-venezia-719457243/" target="_blank" style="text-decoration: none;">
+                                <img src="linkedin.svg" width="23px" height="23px">
+                            </a>
+                        </div>
+                    </font>
+                </div>
+                <!-- <div class="icona-bottom">
+                    <img src="icona.ico" style="width: 25px; height: 27px;"/>
+                </div>
+                <div class="firma">Alessandro Venezia Chinesiologo</div> -->
+            </div>
+        </center>
+    </body>
+</html>

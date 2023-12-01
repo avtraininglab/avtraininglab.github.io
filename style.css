@@ -1,0 +1,297 @@
+body {
+    font-family: system-ui;
+    width: fit-content;
+}
+div.titoletto {
+    margin-top: 80px; 
+    margin-left: 80px;
+}
+.rett-top {
+    width:100%;
+    height:100px;
+    background: #005b7fb8;
+    position: relative;
+    .icona-top {
+        position: absolute;
+        margin-left: 108px;
+        margin-top: 54px;
+    }
+    .titolo {
+        font-family: system-ui;
+        color: white;
+        float: left;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 1%;
+        text-shadow: 4px 4px 6px #12124b73;
+        border-right: solid;
+        .io {
+            font-size: medium;
+            font-variant: stacked-fractions;
+        }
+    }
+    .collegamenti {
+        padding-top: 2%;
+        color: white;
+        text-shadow: 4px 4px 6px #12124b73;
+        font-family: system-ui;
+        .links {
+            text-decoration: none;
+            color: white;
+        }
+        .c-home {
+            padding-right: 5px;
+            padding-left: 8px;
+            margin-right: 50px;
+            background-color: rgb(92 172 203);
+            border-radius: 7px;
+        }
+        .c-home:hover {
+            background-color: rgba(92, 172, 203, 0.498) !important;
+            border-radius: 7px !important;
+        }
+        .c-servizi {
+            padding-right: 5px;
+            padding-left: 8px;
+            margin-right: 50px;
+        }
+        .c-servizi:hover {
+            background-color: rgba(92, 172, 203, 0.498) !important;
+            border-radius: 7px !important;
+        }
+        .c-chi-sono {
+            padding-right: 5px;
+            padding-left: 8px;
+            margin-right: 50px;
+        }
+        .c-chi-sono:hover {
+            background-color: rgba(92, 172, 203, 0.498) !important;
+            border-radius: 7px !important;
+        }
+        .c-contatti {
+            padding-right: 5px;
+            padding-left: 8px;
+            margin-right: 50px;
+        }
+        .c-contatti:hover {
+            background-color: rgba(92, 172, 203, 0.498) !important;
+            border-radius: 7px !important;
+        }
+        .c-torna-home:hover {
+            background-color: rgba(92, 172, 203, 0.498) !important;
+            border-radius: 7px !important;
+        }
+    }
+}
+.rett-bottom {
+    margin-top: 80px;
+    background: #FF9556;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    .firma {
+        font-weight: bold;
+        color: white;
+        margin-right: 60%;
+        /* margin-top: 100px; */
+        /* padding-top: 2px; */
+        width: fit-content;
+    }
+    .icona-bottom {
+        position: absolute;
+        margin-left: 113px;
+        /* margin-top: 0px; */
+        margin-bottom: 33px;
+    }
+    .testo-bottom {
+        color: white;
+        font-weight: bold;
+        font-family: system-ui;
+    }
+}
+.content {
+    color: dimgrey;
+    .home {
+        padding-top: 105px;
+        .introduzione {
+            display: flex;
+        }
+        .frase-introduttiva {
+            padding-left: 10%;
+            padding-right: 300px;
+            font-size: 50px;
+        }
+        .img-introduttiva {
+            margin-right: 70px;
+            opacity: 50%;
+        }
+        .chi-e-chinesiologo {
+            background-color: #005b7fb8;
+            color: white;
+            margin-top: 80px;
+            text-align: center;
+            font-size: 30px;
+            padding: 7%;
+        }
+    }
+    .servizi {
+        color: white;
+        /* margin-left: 50px; */
+        margin-top: 80px;
+        display: flex;
+        font-size: larger;
+        .open-modal {
+            color: #005B7F;
+            border: none;
+            margin-top: 10px;
+            font-size: 15px;
+            background: none;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .close-modal {
+            float: right;
+            margin: 10px;
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        .modal-content {
+            text-align: -webkit-cente  r;
+        }
+        .modal {
+            display: none;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #005b7fe2;
+            position: absolute;
+            margin-left: 13%;
+            height: 210px;
+            width: 1110px;
+            box-shadow: 2px 2px 35px grey;
+        }
+        .attivita {
+            color: #FF9556;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .descrizione {
+            margin-top: 15px;
+            color: white; 
+        }
+        .blocchi {
+            border-radius: 10px;
+            text-align: center;
+            width: 13%;
+            resize: none;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            float: left;
+        }
+    }
+    .chi-sono {
+        background-color: #ff78285e;
+        margin-top: 80px;
+        margin-left: 40px;
+        margin-right: 40px;
+        border-radius: 12px;
+        padding: 60px;
+    }
+    .appendice {
+        margin-top: 80px;
+        .chinesiologo {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
+    .contatti {
+        margin-left: 60px;
+        padding-top: 80px;
+        font-size: 20px;
+        padding-right: 55%;
+        background-color: #005b7f52;
+        margin-top: 60px;
+        color: white;
+        border-radius: 10px;
+        margin-left: auto;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        .contatti-text {
+            padding-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
+    .testo {
+        font-size: large;
+    }
+}
+.content-form {
+    padding-top: 105px;
+    padding-left: 10%;
+    font-family: system-ui;
+    color: dimgrey;
+    .my-form {
+        padding-top: 20px;
+        .lable {
+            margin-top: 15px;
+        }
+        .box-messaggio {
+            font-family: system-ui;
+        }
+        .submit-button {
+            padding: 7px;
+            margin-top: 40px;
+            margin-left: 37%;
+            .submit-button-button {
+                font-size: medium;
+                width: 60px;
+                height: 30px;
+                text-align-last: center;
+                cursor: pointer;
+                background-color: #005b7fb8;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 2px 2px 10px grey;
+            }
+        }
+    }
+}
+/* codice per nascondere frecce da input type=number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+/* far apparire div on scroll */
+.backHome {
+    transform: rotateX(180deg);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    transition: all .3s;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 95%;
+    background-color: #00435d8f;
+    border-radius: 20px;
+    opacity: 80%;
+}
+.hide {
+    opacity:0;
+}
+.anteprima {
+    border: none;
+    font-family: system-ui;
+    width: 200px;
+    background-color: transparent;
+}
