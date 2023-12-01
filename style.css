@@ -15,9 +15,8 @@ div.titoletto {
     color: white;
     /* position: relative; */
     .icona-top {
-        position: absolute;
-        margin-left: 108px;
-        margin-top: 54px;
+        display: flex;
+        align-items: self-end;
     }
     .titolo {
         font-family: system-ui;
