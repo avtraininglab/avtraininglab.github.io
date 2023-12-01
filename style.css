@@ -167,9 +167,10 @@ div.titoletto {
             border-radius: 10px;
             background-color: #005b7fe2;
             position: absolute;
-            margin-left: 13%;
+            width: -webkit-fill-available;
+            margin: 0 8%;
             height: 210px;
-            width: 1110px;
+            /* width: 1110px; */
             box-shadow: 2px 2px 35px grey;
         }
         .attivita {
